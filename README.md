@@ -46,8 +46,8 @@ python multiple_knapsack_solving_methods.py
 - **Space Complexity**: $O(n \times W)$ due to the 2D table used for storing solutions to subproblems.
 
 ### 4. Genetic Algorithm:
-- **Time Complexity**: $O(n \times \text{POP\_SIZE} \times \text{MAX\_GEN})$, where $n$ is the number of items, $\text{POP\_SIZE}$ is the population size, and $\text{MAX\_GEN}$ is the maximum number of generations.
-- **Space Complexity**: $O(\text{POP\_SIZE})$ due to the storage of the population.
+- **Time Complexity**: $O(n \times \text{POP SIZE} \times \text{MAX GEN})$, where $n$ is the number of items, $\text{POP SIZE}$ is the population size, and $\text{MAX GEN}$ is the maximum number of generations.
+- **Space Complexity**: $O(\text{POP SIZE})$ due to the storage of the population.
 
 ### 5. Greedy Algorithm:
 - **Time Complexity**: $O(n \log n)$ due to the sorting step based on the value-to-weight ratio.
