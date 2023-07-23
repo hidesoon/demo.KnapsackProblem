@@ -31,43 +31,24 @@ To see a demonstration of all the methods in action, run the `multiple_knapsack_
 ```bash
 python multiple_knapsack_solving_methods.py
 ```
-
 ## Complexity Analysis of Knapsack Problem Algorithms
 
-### 1. Backtrack Algorithm
-- **Time Complexity**: $O(2^n)$
-  - The algorithm explores all possible combinations of items, leading to an exponential number of recursive calls.
-- **Space Complexity**: \(O(n)\)
-  - Due to the recursive call stack.
+### 1. Backtrack Algorithm:
+- **Time Complexity**: The worst-case time complexity is $O(2^n)$, where $n$ is the number of items. This arises due to the exploration of all possible combinations of items.
+- **Space Complexity**: $O(n)$ due to the recursive call stack.
 
-### 2. Branch and Bound Algorithm
-- **Time Complexity**: \(O(2^n)\) 
-  - In the worst case, the algorithm might need to explore all possible combinations of items. However, pruning often reduces the actual search space.
-- **Space Complexity**: \(O(2^n)\) 
-  - Determined by the maximum number of nodes stored in the queue.
+### 2. Branch and Bound Algorithm:
+- **Time Complexity**: Worst-case time complexity is $O(2^n)$. However, due to pruning, the actual number of nodes explored can be significantly less.
+- **Space Complexity**: Worst-case space complexity is $O(2^n)$ due to the maximum number of nodes stored in the queue. However, pruning can reduce the actual space usage.
 
-### 3. Dynamic Programming Algorithm
-- **Time Complexity**: \(O(n \times W)\) 
-  - The algorithm fills up a table of size \(n \times W\), where \(W\) is the maximum weight capacity.
-- **Space Complexity**: \(O(n \times W)\) 
-  - Due to the 2D table used for storing solutions.
+### 3. Dynamic Programming Algorithm:
+- **Time Complexity**: $O(n \times W)$, where $n$ is the number of items and $W$ is the maximum weight capacity of the knapsack.
+- **Space Complexity**: $O(n \times W)$ due to the 2D table used for storing solutions to subproblems.
 
-### 4. Genetic Algorithm
-- **Time Complexity**: \(O(n \times \text{POP_SIZE} \times \text{MAX_GEN})\)
-  - The algorithm evaluates the fitness of the entire population over multiple generations.
-- **Space Complexity**: \(O(\text{POP_SIZE})\)
-  - Determined by the size of the population.
+### 4. Genetic Algorithm:
+- **Time Complexity**: $O(n \times \text{POP\_SIZE} \times \text{MAX\_GEN})$, where $n$ is the number of items, $\text{POP\_SIZE}$ is the population size, and $\text{MAX\_GEN}$ is the maximum number of generations.
+- **Space Complexity**: $O(\text{POP\_SIZE})$ due to the storage of the population.
 
-### 5. Greedy Algorithm
-- **Time Complexity**: \(O(n \log n)\)
-  - Dominated by the sorting step based on the value-to-weight ratio.
-- **Space Complexity**: \(O(n)\)
-  - For storing the value-to-weight ratios and the sorted list of items.
-
-## Contributing
-
-Feel free to contribute to this repository by submitting pull requests or raising issues. All contributions are welcome!
-
-## License
-
-This project is open-source and available under the MIT License.
+### 5. Greedy Algorithm:
+- **Time Complexity**: $O(n \log n)$ due to the sorting step based on the value-to-weight ratio.
+- **Space Complexity**: $O(n)$ for storing the value-to-weight ratios and the sorted list of items.
