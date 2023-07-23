@@ -35,7 +35,7 @@ python multiple_knapsack_solving_methods.py
 ## Complexity Analysis of Knapsack Problem Algorithms
 
 ### 1. Backtrack Algorithm
-- **Time Complexity**: \(O(2^n)\) 
+- **Time Complexity**: $O(2^n)$
   - The algorithm explores all possible combinations of items, leading to an exponential number of recursive calls.
 - **Space Complexity**: \(O(n)\)
   - Due to the recursive call stack.
