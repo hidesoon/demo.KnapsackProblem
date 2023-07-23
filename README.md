@@ -32,6 +32,38 @@ To see a demonstration of all the methods in action, run the `multiple_knapsack_
 python multiple_knapsack_solving_methods.py
 ```
 
+## Complexity Analysis of Knapsack Problem Algorithms
+
+### 1. Backtrack Algorithm
+- **Time Complexity**: \(O(2^n)\) 
+  - The algorithm explores all possible combinations of items, leading to an exponential number of recursive calls.
+- **Space Complexity**: \(O(n)\)
+  - Due to the recursive call stack.
+
+### 2. Branch and Bound Algorithm
+- **Time Complexity**: \(O(2^n)\) 
+  - In the worst case, the algorithm might need to explore all possible combinations of items. However, pruning often reduces the actual search space.
+- **Space Complexity**: \(O(2^n)\) 
+  - Determined by the maximum number of nodes stored in the queue.
+
+### 3. Dynamic Programming Algorithm
+- **Time Complexity**: \(O(n \times W)\) 
+  - The algorithm fills up a table of size \(n \times W\), where \(W\) is the maximum weight capacity.
+- **Space Complexity**: \(O(n \times W)\) 
+  - Due to the 2D table used for storing solutions.
+
+### 4. Genetic Algorithm
+- **Time Complexity**: \(O(n \times \text{POP_SIZE} \times \text{MAX_GEN})\)
+  - The algorithm evaluates the fitness of the entire population over multiple generations.
+- **Space Complexity**: \(O(\text{POP_SIZE})\)
+  - Determined by the size of the population.
+
+### 5. Greedy Algorithm
+- **Time Complexity**: \(O(n \log n)\)
+  - Dominated by the sorting step based on the value-to-weight ratio.
+- **Space Complexity**: \(O(n)\)
+  - For storing the value-to-weight ratios and the sorted list of items.
+
 ## Contributing
 
 Feel free to contribute to this repository by submitting pull requests or raising issues. All contributions are welcome!
