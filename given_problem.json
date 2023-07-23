@@ -1,0 +1,45 @@
+{
+    "items": [
+        {
+            "item_id": 0,
+            "weight": 4,
+            "value": 19
+        },
+        {
+            "item_id": 1,
+            "weight": 2,
+            "value": 17
+        },
+        {
+            "item_id": 2,
+            "weight": 8,
+            "value": 30
+        },
+        {
+            "item_id": 3,
+            "weight": 3,
+            "value": 13
+        },
+        {
+            "item_id": 4,
+            "weight": 7,
+            "value": 25
+        },
+        {
+            "item_id": 5,
+            "weight": 5,
+            "value": 29
+        },
+        {
+            "item_id": 6,
+            "weight": 9,
+            "value": 23
+        },
+        {
+            "item_id": 7,
+            "weight": 6,
+            "value": 10
+        }
+    ],
+    "capacity": 17
+}
